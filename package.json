@@ -64,7 +64,6 @@
   },
   "husky": {
     "hooks": {
-      "post-merge": "npm ci",
       "pre-commit": "npx lint-staged && npm run build"
     }
   }
