@@ -3,5 +3,7 @@
 	"useTabs": true,
 	"semi": true,
 	"quoteProps": "consistent",
-	"trailingComma": "all"
+	"trailingComma": "all",
+	"phpVersion": "7.4",
+	"braceStyle": "1tbs"
 }

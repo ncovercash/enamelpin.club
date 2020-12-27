@@ -1,0 +1,9 @@
+{
+    "require": {
+        "whichbrowser/parser": "^2.0",
+        "ralouphie/getallheaders": "^3.0"
+    },
+    "require-dev": {
+        "phan/phan": "^4.0"
+    }
+}

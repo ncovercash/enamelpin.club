@@ -3,5 +3,8 @@
 enamelpin.club.sublime-workspace
 
 node_modules
+src/php/vendor
 
 dist/
+
+secrets.json
