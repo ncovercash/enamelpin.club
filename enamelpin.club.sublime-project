@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				"src/php/vendor",
+				"node_modules",
+			],
+			"name": "enamelpin.club",
+			"path": "."
+		}
+	]
+}

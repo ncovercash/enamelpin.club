@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"allowSyntheticDefaultImports": true,
+		"checkJs": false,
+		"incremental": true,
+		"jsx": "react",
+		"jsxFactory": "jsxElem",
+		"lib": ["es6", "dom", "dom.iterable"],
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"sourceMap": true,
+		"target": "esnext"
+	}
+}
