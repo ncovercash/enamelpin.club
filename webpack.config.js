@@ -20,11 +20,11 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.scss$/,
+				test: /\.css$/,
 				use: [
-					'style-loader',
+					"style-loader",
 					"css-loader",
-					'sass-loader',
+					"postcss-loader",
 				]
 			}
 		],
