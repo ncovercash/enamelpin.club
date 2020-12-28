@@ -68,12 +68,14 @@ use EnamelPinClub\Controller; ?>
 	<link rel="image_src" href="tbd" type="image/png"/>
 
 	<script type="text/javascript">
+		window.ENAMEL_PIN_CLUB = {};
 		<?php if (Controller::isDevelMode()): ?>
-			window.debugMode = true;
+			window.ENAMEL_PIN_CLUB.debugMode = true;
 			localStorage.debug = "*";
 		<?php else: ?>
-			window.debugMode = false;
+			window.ENAMEL_PIN_CLUB.debugMode = false;
 		<?php endif; ?>
+		window.ENAMEL_PIN_CLUB.isLoggedIn = <?= json_encode(array_key_exists("user", $_SESSION)) ?>;
 	</script>
 </head>
 <body>

@@ -14,6 +14,7 @@
 	},
 	"homepage": "https://enamelpin.club/",
 	"dependencies": {
+		"@types/jquery": "^3.5.5",
 		"axios": "^0.21.1",
 		"debug": "^4.3.1",
 		"fibers": "^5.0.0",

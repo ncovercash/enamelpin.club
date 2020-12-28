@@ -7,9 +7,6 @@ module.exports = {
 		filename: "webpack.js",
 		path: __dirname + "/dist/js/",
 	},
-	externals: [
-		"foundation-sites",
-	],
 	resolve: {
 		extensions: [".ts", ".tsx", ".js"],
 	},
