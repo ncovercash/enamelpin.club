@@ -4,6 +4,6 @@
         "ralouphie/getallheaders": "^3.0"
     },
     "require-dev": {
-        "phan/phan": "^4.0"
+        "phan/phan": "4.0.0"
     }
 }
