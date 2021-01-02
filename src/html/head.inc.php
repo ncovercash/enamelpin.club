@@ -1,13 +1,15 @@
 <?php
 use EnamelPinClub\Controller; ?>
 <!DOCTYPE html>
-<html>
-<head data-rootdir="<?= ROOTDIR ?>" lang="en">
+<html class="">
+<head lang="en">
 	<meta charset="utf-8" />
 
 	<title>
 		Home | Enamel Pin Club
 	</title>
+
+	<link rel="stylesheet" href="<?= ROOTDIR ?>styles.css" />
 
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<meta name="keywords" content="enamel pin, pin, collection"/>
@@ -68,7 +70,7 @@ use EnamelPinClub\Controller; ?>
 	<link rel="image_src" href="tbd" type="image/png"/>
 
 	<script type="text/javascript">
-		window.ENAMEL_PIN_CLUB = {};
+		window["ENAMEL_PIN_CLUB"] = {};
 		<?php if (Controller::isDevelMode()): ?>
 			window.ENAMEL_PIN_CLUB.debugMode = true;
 			localStorage.debug = "*";
@@ -76,6 +78,6 @@ use EnamelPinClub\Controller; ?>
 			window.ENAMEL_PIN_CLUB.debugMode = false;
 		<?php endif; ?>
 		window.ENAMEL_PIN_CLUB.isLoggedIn = <?= json_encode(array_key_exists("user", $_SESSION)) ?>;
+		window.ENAMEL_PIN_CLUB.root = <?= json_encode(ROOTDIR) ?>;
 	</script>
 </head>
-<body>

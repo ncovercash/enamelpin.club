@@ -2,6 +2,7 @@ interface Window {
 	ENAMEL_PIN_CLUB: {
 		debugMode: boolean;
 		isLoggedIn: boolean;
+		root: string;
 	};
 }
 

@@ -1,0 +1,11 @@
+@tailwind base;
+
+@layer base {
+	body {
+		@apply bg-white;
+
+		&.dark {
+			@apply bg-grey-800;
+		}
+	}
+}

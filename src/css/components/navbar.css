@@ -1,0 +1,48 @@
+@tailwind components;
+
+@layer components {
+	header {
+		@apply bg-main-600 text-white;
+		.dark & {
+			@apply bg-main-700;
+		}
+
+		a {
+			@apply no-underline;
+
+			&:hover {
+				@apply underline;
+			}
+		}
+
+		.navbar-container {
+			@apply container mx-auto;
+			@apply flex flex-wrap flex-col;
+			@apply md:flex-row items-center;
+			@apply pt-5 md:pt-0;
+
+			> a {
+				/* logo space */
+				@apply flex items-center;
+				@apply mb-4 md:mb-0;
+
+				@apply text-3xl;
+			}
+
+			nav {
+				@apply flex flex-wrap items-center justify-center;
+				@apply text-lg font-medium;
+				@apply md:ml-auto;
+
+				a {
+					@apply p-5;
+					@apply rounded-full md:rounded-none;
+
+					&:hover {
+						@apply bg-main-700;
+					}
+				}
+			}
+		}
+	}
+}

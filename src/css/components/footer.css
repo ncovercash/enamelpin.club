@@ -1,0 +1,39 @@
+@tailwind components;
+
+@layer components {
+	footer {
+		@apply bg-main-600 text-white;
+		.dark & {
+			@apply bg-main-700;
+		}
+
+		a {
+			@apply no-underline;
+
+			&:hover {
+				@apply underline;
+			}
+		}
+
+		> div {
+			@apply container mx-auto;
+			@apply flex flex-wrap flex-col;
+			@apply sm:flex-row items-center;
+			@apply py-5;
+
+			> a {
+				/* logo space */
+				@apply flex items-center;
+				@apply mb-4 sm:mb-0;
+
+				@apply text-xl;
+			}
+
+			.copyright {
+				@apply text-sm;
+				@apply sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0;
+				@apply sm:border-l-2 sm:border-grey-200;
+			}
+		}
+	}
+}
