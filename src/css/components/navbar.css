@@ -3,6 +3,7 @@
 @layer components {
 	header {
 		@apply bg-main-600 text-white;
+
 		.dark & {
 			@apply bg-main-700;
 		}
