@@ -19,7 +19,7 @@ module.exports = smp.wrap({
 		path: path.resolve(__dirname, "dist/"),
 	},
 	resolve: {
-		extensions: [".ts", ".tsx", ".js", ".css"],
+		extensions: [".ts", ".tsx", ".js", ".pcss"],
 	},
 	module: {
 		rules: [
@@ -31,12 +31,22 @@ module.exports = smp.wrap({
 				}
 			},
 			{
-				test: /\.css$/,
+				test: /\.pcss$/,
 				use: [
 					MiniCssExtractPlugin.loader,
-					"css-loader",
-					"postcss-loader",
-				]
+					{
+						loader: "css-loader",
+						options: {
+							sourceMap: false,
+						},
+					},
+					{
+						loader: "postcss-loader",
+						options: {
+							sourceMap: false,
+						},
+					},
+				],
 			},
 		],
 	},
@@ -53,4 +63,5 @@ module.exports = smp.wrap({
 		// }),
 	],
 	devtool: "eval-cheap-module-source-map",
+	stats: "detailed",
 });

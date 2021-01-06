@@ -1,0 +1,65 @@
+@tailwind base;
+
+@layer base {
+	.prose {
+		@apply prose-sm sm:prose lg:prose-lg xl:prose-xl;
+
+		a {
+			@apply text-main-900;
+		}
+		blockquote {
+			@apply text-grey-900;
+			border-left-color: theme("colors.main.800");
+		}
+		ul > li::before {
+			@apply bg-main-900;
+		}
+
+		.dark & {
+			@apply text-grey-300; /*aa*/
+
+			[class~="lead"] {
+				@apply text-grey-400; /*aa*/
+			}
+			a {
+				@apply text-main-400; /*aa*/
+			}
+			strong {
+				@apply text-grey-200; /*aa*/
+			}
+			ol > li::before {
+				@apply text-grey-200; /*aa*/
+			}
+			ul > li::before {
+				@apply bg-main-600; /*aa*/
+			}
+			hr {
+				border-color: theme("colors.grey.200"); /*aa*/
+			}
+			blockquote {
+				@apply text-grey-400; /*aa*/
+				border-left-color: theme("colors.main.600"); /*aa*/
+			}
+			h1,
+			h2,
+			h3,
+			h4 {
+				@apply text-grey-200; /*aa*/
+			}
+			figure figcaption {
+				@apply text-grey-400; /*aa*/
+			}
+			code,
+			pre {
+				@apply text-grey-200; /*aa*/
+			}
+			thead {
+				@apply text-grey-200;
+				border-bottom-color: theme("colors.grey.500");
+			}
+			tbody tr {
+				border-bottom-color: theme("colors.grey.700");
+			}
+		}
+	}
+}

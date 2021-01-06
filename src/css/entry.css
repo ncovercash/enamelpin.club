@@ -1,9 +1,0 @@
-@import "./main/body.css";
-@import "./main/typography.css";
-
-@import "./components/navbar.css";
-@import "./components/footer.css";
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

@@ -3,6 +3,7 @@ interface Window {
 		debugMode: boolean;
 		isLoggedIn: boolean;
 		root: string;
+		dark: boolean;
 	};
 }
 

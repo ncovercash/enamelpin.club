@@ -1,7 +1,7 @@
 <?php
 use EnamelPinClub\Controller; ?>
 <!DOCTYPE html>
-<html class="">
+<html>
 <head lang="en">
 	<meta charset="utf-8" />
 
@@ -78,6 +78,9 @@ use EnamelPinClub\Controller; ?>
 			window.ENAMEL_PIN_CLUB.debugMode = false;
 		<?php endif; ?>
 		window.ENAMEL_PIN_CLUB.isLoggedIn = <?= json_encode(array_key_exists("user", $_SESSION)) ?>;
+		window.ENAMEL_PIN_CLUB.dark = <?= json_encode(
+  	array_key_exists("user", $_SESSION) ? $_SESSION["user"]->isDarkModeEnabled() : true,
+  ) ?>;
 		window.ENAMEL_PIN_CLUB.root = <?= json_encode(ROOTDIR) ?>;
 	</script>
 </head>
