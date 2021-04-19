@@ -26,7 +26,7 @@
 		"sailui": "^0.5.0",
 		"speed-measure-webpack-plugin": "^1.3.3",
 		"supports-webp": "^2.0.1",
-		"tailwindcss": "^2.0.2",
+		"tailwindcss": "^2.1.1",
 		"when-dom-ready": "^1.2.12"
 	},
 	"devDependencies": {
