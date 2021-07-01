@@ -46,7 +46,7 @@
 		"mini-css-extract-plugin": "1.6.2",
 		"postcss": "8.3.5",
 		"postcss-import": "14.0.2",
-		"postcss-loader": "4.3.0",
+		"postcss-loader": "6.1.1",
 		"prettier": "2.3.2",
 		"prettier-plugin-organize-imports": "1.1.1",
 		"purgecss": "3.1.3",
